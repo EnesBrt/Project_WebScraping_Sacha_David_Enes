@@ -1,9 +1,9 @@
 # Celsius => Fahrenheit
 def CELtoFAR(temperature):
-    temperature = ((temperature - 32) / 1.8)
-    return temperature
+    temperature = ((temperature * 9/5) + 32)
+    return round(temperature)
 
 # Fahrenheit => Celsius
 def FARtoCEl(temperature):
-    temperature = ((temperature * 1.8) + 32)
-    return temperature
+    temperature = ((32 - temperature) * 5/9)
+    return round(temperature)
