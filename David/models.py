@@ -1,5 +1,6 @@
 import sys
 from datetime import datetime, timezone
+import utils
 
 class Log():
     COLOR_BLACK =30
@@ -17,17 +18,27 @@ class Log():
 class Post():
     def __init__(self, id, created, title, nbVotes, nbComments):
         self.id = str(id)
-        self.created = int(created)
-        self.title = str(title).replace(" ", "").replace("\n", "")
+        self.intCreated = int(created)
+        self.strCreated = utils.timestamp_to_string(int(created))
+        self.title = str(title).replace("\n", "").strip()
         self.nbVotes = str(nbVotes)
         self.nbComments = str(nbComments).split(" ")[0]
 
     def __str__(self):
         Log().write('id=' + self.id + ' (', Log.COLOR_BLACK)
-        if self.created:
-            Log().write('created=' + datetime.fromtimestamp(self.created, timezone.utc).strftime("%Y-%m-%d %H:%M:%S") + ') : ', Log.COLOR_BLACK)
+        if self.intCreated:
+            Log().write('created=' + self.strCreated + ') : ', Log.COLOR_BLACK)
         Log().write('title=' + self.title + ' | ', Log.COLOR_GREEN)
         Log().write('nbVotes=' + self.nbVotes + ', ', Log.COLOR_BLUE)
         Log().write('nbComments=' + self.nbComments, Log.COLOR_RED)
         return ""
 
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'intCreated': self.intCreated,
+            'strCreated': self.strCreated,
+            'title': self.title,
+            'nbVotes': self.nbVotes,
+            'nbComments': self.nbComments,
+        }
