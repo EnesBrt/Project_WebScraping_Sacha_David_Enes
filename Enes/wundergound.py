@@ -1,5 +1,5 @@
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup as BS
 import pandas as pd
 from functools import reduce
 from selenium import webdriver
@@ -9,27 +9,29 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
+import time
 
 headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36'}
 url = "https://www.wunderground.com/history/monthly/ca/toronto/CYTZ/date/2020-10"
 
-firefoxOptions = Options()
-firefoxOptions.add_argument("-headless")
-
-
-def render_page():
+def render_page(url):
     firefoxOptions = Options()
     firefoxOptions.add_argument("-headless")
     driver = webdriver.Firefox(executable_path='/home/enes/geckodriver')
-    driver.get("https://www.wunderground.com/history/monthly/ca/toronto/CYTZ/date/2020-10")
+    driver.get(url)
     time.sleep(3)
     r = driver.page_source
     driver.quit()
     return r
+render_page('https://www.wunderground.com/history/monthly/ca/toronto/CYTZ/date/2020-10')
+
+dates = ['2020-10']
+page = 'https://www.wunderground.com/history/monthly/ca/toronto/CYTZ/date/2020-10'
+df_output = scraper(page,dates)
 
 def scraper(page, dates):
         output = pd.DataFrame()
-
+        
         for d in dates:
 
             url = str(str(page) + str(d))
@@ -122,3 +124,5 @@ def scraper(page, dates):
                          'Pres_avg', 'Pres_min', 'Precipitation', 'Date']]
 
         return output
+    
+scraper(page, dates)
