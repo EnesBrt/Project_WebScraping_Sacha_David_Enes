@@ -9,6 +9,8 @@ import pandas as pd
 NB_DAYS_TO_FETCH = 90
 REDDIT_TARGET_URL = "https://new.reddit.com/r/bapcsalescanada/new/"
 DEBUG_MODE_ENABLE = True # To save time, use the local file
+EXPORT_CSV_ENABLE = False # Exporte dataframe posts
+weather.PATH_GECKO_DRIVER = "PLACE HERE YOUR PATH GECKO DRIVER !"
 #-------------------------------------------------
 
 # Retrieve the publications of the last days
@@ -45,5 +47,7 @@ dfPosts.drop(['temp_min', 'dew_max', 'dew_min', 'hum_max',
               'date', 'index', 'id', 'title', 'score'], axis=1, inplace=True)
 
 # Export CSV if needed
-dfPosts.to_csv('temp/soleil.csv')
+if EXPORT_CSV_ENABLE:
+    dfPosts.to_csv('data/posts_weather.csv')
 
+# TODO : Analyze et visualize the datas

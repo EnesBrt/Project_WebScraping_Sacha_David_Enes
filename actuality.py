@@ -186,6 +186,8 @@ def getLastPosts(targetUrl: str, tillDate: datetime, debugMode: bool = False) ->
         print('Page ' + str(numPage) + ' : oldest post = ' + utils.datetime_to_string(oldDate))
 
     if listPosts:
+        print('--- Posts scraper done! ---')
+
         # save data into an dataframe
         # fields = ['id', 'intCreated', 'strCreated', 'title', 'title', 'nbVotes', 'nbComments']
         df = pd.DataFrame.from_records([post.to_dict() for post in listPosts])

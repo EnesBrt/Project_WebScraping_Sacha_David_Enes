@@ -13,6 +13,7 @@ import os
 
 from Reddit import utils
 
+PATH_GECKO_DRIVER = ""
 
 def _convert_units(df):
     """
@@ -77,7 +78,7 @@ def _render_page(targetUrl: str, debugMode: bool = False) -> str:
         # Download web page
 
         driver = webdriver.Firefox(
-            executable_path="C:\\Users\\David\\Jupiter\\Simplon\\Reddit-Soleil\\webdriver\\geckodriver.exe")
+            executable_path = PATH_GECKO_DRIVER)
         driver.get(targetUrl)
         # Wait for javascript render
         try:
@@ -167,7 +168,9 @@ def _scraper(page: str, dates: [], debugMode: bool = False) -> pd.DataFrame:
 
         output = output.append(df_final)
 
-    print('Scraper done!')
+        print("Weather month : " + str(d) )
+
+    print('--- Weather scraper done! ---')
 
     output = output[['temp_avg', 'temp_min', 'dew_max', 'dew_avg', 'dew_min', 'hum_max',
                      'hum_avg', 'hum_min', 'wind_max', 'wind_avg', 'wind_min', 'pres_max',
