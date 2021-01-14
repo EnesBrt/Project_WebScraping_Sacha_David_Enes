@@ -100,8 +100,8 @@ $ pip install seaborn
 
 #  Graph of temperatures and number of posts as a function of time ( 4/12/20 - 13/01/21 )
 
-![img](images\graphLines.png)
-![img](images\graphBars.png)
+![img](images/graphLines.png)
+![img](images/graphBars.png)
 
 #### Subsequently it will be possible for us to take other data such as wind, rain, atmospheric pressure... 
 #### Add other parameters, and suggest other correlations. It is only a sample.
