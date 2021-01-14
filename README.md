@@ -30,7 +30,7 @@ This correctly retrieved, processed and cleaned data will then have to be linked
 
 # Resources
 
-## Useful resources link :
+## Useful link :
 
 [BeautifulSoup documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
@@ -51,10 +51,13 @@ This correctly retrieved, processed and cleaned data will then have to be linked
 
 # How to use main.py file
 
+- Go to : 
 ```python
-#Go to : 
-NB_DAYS_TO_FETCH()
-#Insert the number of day required between ()
+#------------- User settings ------------------------------------------------#
+NB_DAYS_TO_FETCH = 90 #Insert the number of day required between ()
+REDDIT_TARGET_URL = "https://new.reddit.com/r/bapcsalescanada/new/"
+DEBUG_MODE_ENABLE = True # To save time, use the local file
+#-----------------------------------------------------------------------------#
 ```
 
 ## Scraping reddit by using BeautifulSoup4
