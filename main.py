@@ -1,10 +1,12 @@
 # import libraries
 from datetime import datetime, timedelta
+import matplotlib.pyplot as plt
 import utils
 import actuality
 import weather
 import pandas as pd
 import os
+
 
 #------------- User settings ---------------------
 NB_DAYS_TO_FETCH = 90
@@ -13,6 +15,10 @@ DEBUG_MODE_ENABLE = True # To save time, use the local file
 EXPORT_CSV_ENABLE = True # Exporte dataframe posts
 weather.PATH_GECKO_DRIVER = "PLACE HERE YOUR PATH GECKO DRIVER !"
 #-------------------------------------------------
+
+
+#----------- First part -------------
+
 
 # Retrieve the publications of the last days
 startDate = datetime.now()
@@ -45,7 +51,7 @@ dfPosts = pd.concat([dfPosts, dfWeatherPosts], axis=1)
 dfPosts.drop(['temp_min', 'dew_max', 'dew_min', 'hum_max',
               'hum_min', 'wind_max', 'wind_min', 'pres_max',
               'pres_min', 'precipitation', 'upVoteRatio',
-              'date', 'index', 'id', 'title', 'score'], axis=1, inplace=True)
+              'index', 'id', 'title', 'score'], axis=1, inplace=True)
 
 # Export CSV if needed
 if EXPORT_CSV_ENABLE:
@@ -55,4 +61,55 @@ if EXPORT_CSV_ENABLE:
         os.mkdir(dataDir)
     dfPosts.to_csv(dataDir + '/posts_weather.csv')
 
-# TODO : Analyze et visualize the datas
+
+#----------- Second part -------------
+
+
+# Analyze et visualize the datas
+df_csv = pd.read_csv('data/posts_weather.csv')
+
+# Grouping of comment counters with one total counter per day
+dfPostsSum = pd.DataFrame([], columns=['intCreated','strCreated', 'date', 'nbComments','temp_avg','dew_avg','hum_avg','wind_avg','pres_avg'])
+lastDay = ""
+commentsSum = 0
+for i in range(len(df_csv)):
+    postDate = utils.timestamp_to_datetime(df_csv['intCreated'].iloc[i])
+    weatherMonth = df_csv['date'].iloc[i]
+    if lastDay == "":
+        lastDay = weatherMonth # First date
+    elif lastDay != weatherMonth:
+        postDay['nbComments'] = commentsSum
+        commentsSum = 0
+        lastDay = weatherMonth
+        dfPostsSum = dfPostsSum.append(postDay)
+    postDay = df_csv.iloc[i][1:]
+    commentsSum += df_csv['nbComments'].iloc[i]
+    if i == len(df_csv)-1:
+        if commentsSum > 0:
+            postDay['nbComments'] = commentsSum
+            dfPostsSum = dfPostsSum.append(postDay)
+
+# Sorting and reindexing dataframe
+dfPostsSum = dfPostsSum.sort_values('intCreated', ascending=True)
+dfPostsSum = dfPostsSum.reset_index()
+
+# Showing temperature and comments counters
+fig, ax1 = plt.subplots()
+ax1.set_title("Correlation \n Temperature VS Comments")  # Add a title to the axes.
+plt.xticks(rotation=45)
+
+color1 = 'tab:red'
+ax1.set_xlabel('Date')
+ax1.set_ylabel('nb comments', color=color1)
+ax1.plot(dfPostsSum['date'], dfPostsSum['nbComments'], label='NbComments', color=color1)
+ax1.tick_params(axis='y', labelcolor=color1)
+
+ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
+
+color2 = 'tab:blue'
+ax2.set_ylabel('temp_avg', color=color2)  # we already handled the x-label with ax1
+ax2.plot(dfPostsSum['date'], dfPostsSum['temp_avg'], label='TempAvg', color=color2)
+ax2.tick_params(axis='y', labelcolor=color2)
+
+fig.tight_layout()  # otherwise the right y-label is slightly clipped
+plt.show()
