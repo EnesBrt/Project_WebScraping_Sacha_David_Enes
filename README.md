@@ -1,4 +1,4 @@
-# 2) The Sun : the worst enemy of social networks ?
+# The Sun : the worst enemy of social networks ?
 
 
 
