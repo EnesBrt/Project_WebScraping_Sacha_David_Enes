@@ -1,4 +1,4 @@
-Alt-The Sun : the worst enemy of social networks ?
+Alt The Sun : the worst enemy of social networks ?
 
 
 
