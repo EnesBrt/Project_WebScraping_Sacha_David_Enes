@@ -24,7 +24,7 @@ This correctly retrieved, processed and cleaned data will then have to be linked
 
 This project is made to compare some weather data and the percentage of subreddit publication, to see if there is a correlation between weather and outings.
 
-##Scraping reddit by using BeautifulSoup4
+## Scraping reddit by using BeautifulSoup4
 
 ```bash
 $ pip3 install BeautifulSoup4
