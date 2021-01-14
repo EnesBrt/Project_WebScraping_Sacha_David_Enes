@@ -104,10 +104,9 @@ $ pip install seaborn
 ![img](images/graphBars.png)
 
 #### Subsequently it will be possible for us to take other data such as wind, rain, atmospheric pressure... 
-#### Add other parameters, and suggest other correlations. It is only a sample.
 
 
 # ToDo 
 
-- Adapt the graph so that it updates at the same time as the code
+- Add other parameters, and suggest other correlations. It is only a sample.
 
