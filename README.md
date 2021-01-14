@@ -98,4 +98,13 @@ $ pip install matplotlib
 $ pip install seaborn
 ```
 
+# graphique des températures et du nombre de post en fonction du temps( 4/12/20 - 13/01/21 )
+
 ![img](SunCharts.png)
+
+
+
+#ToDo 
+
+- adapt the graph so that it updates at the same time as the code
+
