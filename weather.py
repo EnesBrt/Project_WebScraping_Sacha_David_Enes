@@ -67,13 +67,18 @@ def _render_page(targetUrl: str, debugMode: bool = False) -> str:
     :return: dynamic html content
     """
 
+    # Create a temporary directory if needed
+    tempDir = 'temp'
+    if not os.path.exists(tempDir):
+        os.mkdir(tempDir)
+
     fileName = ""
     pattern = r"[^\/]+$"
     matches = re.search(pattern, targetUrl)
     if matches:
         fileName = matches.group(0)
     # The local file name is built with the date
-    localFile = "temp\\weather_" + fileName + '.html'
+    localFile = tempDir + "\\weather_" + fileName + '.html'
     if not debugMode or (debugMode and not os.path.isfile(localFile)):
         # Download web page
 

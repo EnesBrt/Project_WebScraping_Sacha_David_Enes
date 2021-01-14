@@ -32,7 +32,12 @@ def _loadPage(targetUrl: str, debugMode: bool = False, localFile: str = 'localpa
     """
     global soup
 
-    localFile = "temp\\" + localFile
+    # Create a temporary directory if needed
+    tempDir = 'temp'
+    if not os.path.exists(tempDir):
+        os.mkdir(tempDir)
+
+    localFile = tempDir + "\\" + localFile
     if not debugMode or (debugMode and not os.path.isfile(localFile)):
         # Download web page
 

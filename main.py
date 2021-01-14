@@ -4,12 +4,13 @@ import utils
 import actuality
 import weather
 import pandas as pd
+import os
 
 #------------- User settings ---------------------
 NB_DAYS_TO_FETCH = 90
 REDDIT_TARGET_URL = "https://new.reddit.com/r/bapcsalescanada/new/"
 DEBUG_MODE_ENABLE = True # To save time, use the local file
-EXPORT_CSV_ENABLE = False # Exporte dataframe posts
+EXPORT_CSV_ENABLE = True # Exporte dataframe posts
 weather.PATH_GECKO_DRIVER = "PLACE HERE YOUR PATH GECKO DRIVER !"
 #-------------------------------------------------
 
@@ -48,6 +49,10 @@ dfPosts.drop(['temp_min', 'dew_max', 'dew_min', 'hum_max',
 
 # Export CSV if needed
 if EXPORT_CSV_ENABLE:
-    dfPosts.to_csv('data/posts_weather.csv')
+    # Create a datas directory
+    dataDir = 'data'
+    if not os.path.exists(dataDir):
+        os.mkdir(dataDir)
+    dfPosts.to_csv(dataDir + '/posts_weather.csv')
 
 # TODO : Analyze et visualize the datas
