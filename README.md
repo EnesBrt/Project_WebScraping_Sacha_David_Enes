@@ -1,12 +1,12 @@
-The Sun : the worst enemy of social networks ?
+# 2) The Sun : the worst enemy of social networks ?
 ================================================
+
+
 
 
 ![img](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ffondation-valentin-ribet.org%2Fwp-content%2Fuploads%2F2016%2F12%2Flogo-simplon.gif&f=1&nofb=1.png)
 
-# Context 
-
-We are part of a team of data scientists in a business selling computer components to individuals (B2C). Our communication primarily involves posting content on social networks, in particular Reddit.
+# Context We are part of a team of data scientists in a business selling computer components to individuals (B2C). Our communication primarily involves posting content on social networks, in particular Reddit.
 
 However, communications managers have raised their questions about the publication date of certain content, which seems to have an impact on the number of views and comments posted. One would almost suspect that computer hardware enthusiasts go outside on a sunny day.
 
@@ -21,38 +21,39 @@ Then retrieving the meteorological data for the days concerned. According to the
 
 This correctly retrieved, processed and cleaned data will then have to be linked, in order to highlight the presence of a possible correlation.
 
+This project is made to compare some weather data history and the amount of subreddit publication, to see if there is a correlation between weather and outings.
 
-This project is made to compare some weather data and the percentage of subreddit publication, to see if there is a correlation between weather and outings.
+##Scraping reddit by using BeautifulSoup4
 
-## Scraping reddit by using BeautifulSoup4
-
+-install the following librarie
 ```bash
-$ pip3 install BeautifulSoup4
-$ pip3 install requests
+$ pip install BeautifulSoup4
 ```
 
 
-## Scraping weather underground by using Selenium and BeautifulSoup4
+##Scraping weather underground by using Selenium and BeautifulSoup4
 
+-install the following libraries
 ```bash
-$ pip3 install Selenium
-$ pip3 install Gecko
-$ pip3 install selenium
+$ pip install Selenium
+$ pip install requests
+```
+
+- Another thing that needs to be installed for this process is ChromeDriver.
+You can find the instructions on installing it on the following [link](https://chromedriver.chromium.org/downloads). 
+Download it, install it and place it in a folder that is easily accessible to you.
+
+##Merging the result in one unique .CSV file
+
+-install the following librarie
+```bash
+$ pip install pandas
 ```
 
 
-## Merging the result in one unique .CSV file
+##Build plots and charts
 
 ```bash
-$ pip3 install pandas
-
-```
-
-
-## Build plots and charts
-
-```bash
-$ pip3 install matplotlib
-$ pip3 install seaborn
-
+$ pip install matplotlib
+$ pip install seaborn
 ```
