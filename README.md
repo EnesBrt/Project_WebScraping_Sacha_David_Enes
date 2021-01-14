@@ -103,8 +103,11 @@ $ pip install seaborn
 ![img](SunCharts.png)
 
 
+#### Subsequently it will be possible for us to take other data such as wind, rain, atmospheric pressure... 
+#### Add other parameters, and suggest other correlations. It is only a sample.
+
 
 # ToDo 
 
-- adapt the graph so that it updates at the same time as the code
+- Adapt the graph so that it updates at the same time as the code
 
