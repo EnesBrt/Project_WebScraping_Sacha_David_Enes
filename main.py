@@ -113,3 +113,34 @@ ax2.tick_params(axis='y', labelcolor=color2)
 
 fig.tight_layout()  # otherwise the right y-label is slightly clipped
 plt.show()
+
+
+# Adjusting data for stacked bars
+maxComments = dfPostsSum['nbComments'].max()
+minComments = dfPostsSum['nbComments'].min()
+maxTemp = dfPostsSum['temp_avg'].max()
+minTemp = dfPostsSum['temp_avg'].min()
+ratio = (maxComments - minComments) / (maxTemp-minTemp)
+dfPostsSum['temp_avg'] = (dfPostsSum['temp_avg']-minTemp) * ratio
+
+# From raw value to percentage
+totals = [i + j for i, j in zip(dfPostsSum['nbComments'], dfPostsSum['temp_avg'])]
+commentBars = [i / j * 100 for i, j in zip(dfPostsSum['nbComments'], totals)]
+tempBars = [i / j * 100 for i, j in zip(dfPostsSum['temp_avg'], totals)]
+
+# plot
+barWidth = 0.85
+names = ('A', 'B', 'C', 'D', 'E')
+# Create comments Bars
+plt.bar(range(len(dfPostsSum)), commentBars, color='#b5ffb9', edgecolor='white', width=barWidth)
+# Create temperature Bars
+plt.bar(range(len(dfPostsSum)), tempBars, bottom=commentBars, color='#f9bc86', edgecolor='white', width=barWidth)
+
+# Custom x axis
+plt.xticks(range(len(dfPostsSum)), dfPostsSum['date'], rotation=45)
+plt.xlabel("date")
+
+plt.title("Correlation \n Temperature VS Comments")  # Add a title to the axes.
+
+# Show graphic
+plt.show()
