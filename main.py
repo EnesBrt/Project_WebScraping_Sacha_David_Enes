@@ -9,6 +9,7 @@ import pandas as pd
 NB_DAYS_TO_FETCH = 90
 REDDIT_TARGET_URL = "https://new.reddit.com/r/bapcsalescanada/new/"
 DEBUG_MODE_ENABLE = True # To save time, use the local file
+PATH_GECKO_DRIVER = "PLACE HERE YOUR PATH GECKO DRIVER !"
 #-------------------------------------------------
 
 # Retrieve the publications of the last days
