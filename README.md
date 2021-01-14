@@ -19,19 +19,18 @@ It is important to be able to repeat this analysis throughout the year.
 
 ## Method:
 
-The first step consists buy track the recovery of the post tracking level on Reddit. For example, we can focus on the number of votes,
-the number of comments, the length of time on the first page, etc.
+The first step consists to track the recovery of the post tracking level on Reddit. For example, we can focus on the number of votes,
+the number of comments, the length of time on the first page, etc...
 
 Then retrieving the meteorological data for the days concerned. According to the communications team, temperatures, risk of rain,
 wind strength and other information can be retrieved from many websites, such as weather.com.
 
 This correctly retrieved, processed and cleaned data will then have to be linked, in order to highlight the presence of a possible correlation.
 
-This project is made to compare some weather data history and the amount of subreddit publication, to see if there is a correlation between weather and outings.
 
 # Resources
 
-## Here useful resources link :
+## Useful resources link :
 
 [BeautifulSoup documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
@@ -50,7 +49,10 @@ This project is made to compare some weather data history and the amount of subr
 [Pandas documentation ](https://pandas.pydata.org/docs/)
 
 
+# How to use main.py file
+```python
 
+```
 
 ## Scraping reddit by using BeautifulSoup4
 
