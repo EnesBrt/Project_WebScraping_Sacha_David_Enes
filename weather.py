@@ -77,7 +77,7 @@ def _render_page(targetUrl: str, debugMode: bool = False) -> str:
         # Download web page
 
         driver = webdriver.Firefox(
-            executable_path="C:\\Users\\David\\Jupiter\\Simplon\\Reddit-Soleil\\webdriver\\geckodriver.exe")
+            executable_path=PATH_GECKO_DRIVER)
         driver.get(targetUrl)
         # Wait for javascript render
         try:
