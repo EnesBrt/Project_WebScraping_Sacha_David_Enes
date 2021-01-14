@@ -30,7 +30,7 @@ This correctly retrieved, processed and cleaned data will then have to be linked
 
 # Resources
 
-## Useful resources link :
+## Useful link :
 
 [BeautifulSoup documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
