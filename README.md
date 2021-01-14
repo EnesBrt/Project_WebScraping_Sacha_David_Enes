@@ -17,9 +17,9 @@ Our manager therefore asked you to carry out a study on the impact of weather on
 It is important to be able to repeat this analysis throughout the year.
 
 
-Tracking:
+## Method:
 
-The first step consists of tackle the recovery of the post tracking level on Reddit. For example, we can focus on the number of votes,
+The first step consists buy track the recovery of the post tracking level on Reddit. For example, we can focus on the number of votes,
 the number of comments, the length of time on the first page, etc.
 
 Then retrieving the meteorological data for the days concerned. According to the communications team, temperatures, risk of rain,
@@ -31,7 +31,7 @@ This project is made to compare some weather data history and the amount of subr
 
 # Resources
 
-Here useful resources link :
+## Here useful resources link :
 
 [BeautifulSoup documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
