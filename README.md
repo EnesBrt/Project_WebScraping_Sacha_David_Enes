@@ -56,7 +56,7 @@ This correctly retrieved, processed and cleaned data will then have to be linked
 
 ## Scraping reddit by using BeautifulSoup4
 
--install the following librarie
+- install the following libraries
 ```bash
 $ pip install BeautifulSoup4
 ```
@@ -64,7 +64,7 @@ $ pip install BeautifulSoup4
 
 ## Scraping weather underground by using Selenium and BeautifulSoup4
 
--install the following libraries
+- install the following libraries
 ```bash
 $ pip install Selenium
 $ pip install requests
@@ -77,7 +77,7 @@ Download it, install it and place it in a folder that is easily accessible to yo
 
 ## Merging the result in one unique .CSV file
 
--install the following librarie
+- install the following libraries
 ```bash
 $ pip install pandas
 ```
