@@ -5,7 +5,7 @@
 
 ![img](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ffondation-valentin-ribet.org%2Fwp-content%2Fuploads%2F2016%2F12%2Flogo-simplon.gif&f=1&nofb=1.png)
 
-# Context We are part of a team of data scientists in a business selling computer components to individuals (B2C). Our communication primarily involves posting content on social networks, in particular Reddit.
+# Context
 
 However, communications managers have raised their questions about the publication date of certain content, which seems to have an impact on the number of views and comments posted. One would almost suspect that computer hardware enthusiasts go outside on a sunny day.
 
@@ -22,7 +22,27 @@ This correctly retrieved, processed and cleaned data will then have to be linked
 
 This project is made to compare some weather data history and the amount of subreddit publication, to see if there is a correlation between weather and outings.
 
-##Scraping reddit by using BeautifulSoup4
+# Resources
+
+Here some useful resources :
+
+BeautifulSoup documentation : [Click here](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+
+Scrapy documentation : [Click here](https://scrapy.org/)
+
+Autoscraper tutorial : [Click here](https://medium.com/better-programming/introducing-autoscraper-a-smart-fast-and-lightweight-web-scraper-for-python-20987f52c749)
+
+Weather Data Collection : [Click here](https://towardsdatascience.com/weather-data-collection-web-scraping-using-python-a4189e7a2ee6)
+
+Selenium documention : [Click here](https://www.selenium.dev/documentation/en/)
+
+Matplotlib documentation : [Click here](https://matplotlib.org/)
+
+Seaborn documentation : [Click here](https://seaborn.pydata.org/)
+
+Pandas documentation : [Click here](https://pandas.pydata.org/docs/)
+
+## Scraping reddit by using BeautifulSoup4
 
 -install the following librarie
 ```bash
@@ -30,7 +50,7 @@ $ pip install BeautifulSoup4
 ```
 
 
-##Scraping weather underground by using Selenium and BeautifulSoup4
+## Scraping weather underground by using Selenium and BeautifulSoup4
 
 -install the following libraries
 ```bash
@@ -50,7 +70,7 @@ $ pip install pandas
 ```
 
 
-##Build plots and charts
+## Build plots and charts
 
 ```bash
 $ pip install matplotlib
