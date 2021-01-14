@@ -97,3 +97,5 @@ $ pip install pandas
 $ pip install matplotlib
 $ pip install seaborn
 ```
+
+![img](SunCharts.png)
