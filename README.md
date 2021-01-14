@@ -7,6 +7,8 @@
 
 # Context
 
+We are part of a team of data scientists in a business selling computer components to individuals (B2C). Your communication primarily involves posting content on social networks, in particular Reddit.
+
 However, communications managers have raised their questions about the publication date of certain content, which seems to have an impact on the number of views and comments posted. One would almost suspect that computer hardware enthusiasts go outside on a sunny day.
 
 Our manager therefore asked you to carry out a study on the impact of weather on the number of returns on company publications. It is important to be able to repeat this analysis throughout the year.
