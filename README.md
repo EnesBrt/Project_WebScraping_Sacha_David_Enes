@@ -10,28 +10,32 @@ This project is made to compare some weather data and the percentage of subreddi
 ##Scraping reddit by using BeautifulSoup4
 
 ```bash
-$ pip install BeautifulSoup4
+$ pip3 install BeautifulSoup4
+$ pip3 install requests
 ```
 
 
 ##Scraping weather underground by using Selenium and BeautifulSoup4
 
 ```bash
-$ pip install Selenium
-$ pip install Gecko
+$ pip3 install Selenium
+$ pip3 install Gecko
+$ pip3 install selenium
 ```
 
 
 ##Merging the result in one unique .CSV file
 
 ```bash
-$ pip install pandas
+$ pip3 install pandas
+
+
 ```
 
 
 ##Build plots and charts
 
-```
--
--
+```bash
+$ pip3 install matplotlib
+
 ```
