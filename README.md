@@ -97,3 +97,17 @@ $ pip install pandas
 $ pip install matplotlib
 $ pip install seaborn
 ```
+
+#  Graph of temperatures and number of posts as a function of time ( 4/12/20 - 13/01/21 )
+
+![img](SunCharts.png)
+
+
+#### Subsequently it will be possible for us to take other data such as wind, rain, atmospheric pressure... 
+#### Add other parameters, and suggest other correlations. It is only a sample.
+
+
+# ToDo 
+
+- Adapt the graph so that it updates at the same time as the code
+
