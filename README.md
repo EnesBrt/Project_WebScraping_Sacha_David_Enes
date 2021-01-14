@@ -50,8 +50,11 @@ This correctly retrieved, processed and cleaned data will then have to be linked
 
 
 # How to use main.py file
-```python
 
+```python
+#Go to : 
+NB_DAYS_TO_FETCH()
+#Insert the number of day required between ()
 ```
 
 ## Scraping reddit by using BeautifulSoup4
