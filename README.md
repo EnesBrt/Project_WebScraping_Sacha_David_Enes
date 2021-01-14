@@ -1,6 +1,5 @@
-Alt The Sun : the worst enemy of social networks ?
-
-
+The Sun : the worst enemy of social networks ?
+============================================================
 
 
 ![img](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ffondation-valentin-ribet.org%2Fwp-content%2Fuploads%2F2016%2F12%2Flogo-simplon.gif&f=1&nofb=1.png)
