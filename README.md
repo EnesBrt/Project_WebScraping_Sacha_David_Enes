@@ -104,7 +104,7 @@ $ pip install seaborn
 
 
 
-#ToDo 
+# ToDo 
 
 - adapt the graph so that it updates at the same time as the code
 
