@@ -57,6 +57,8 @@ This correctly retrieved, processed and cleaned data will then have to be linked
 NB_DAYS_TO_FETCH = 90 #Insert the number of day required between ()
 REDDIT_TARGET_URL = "https://new.reddit.com/r/bapcsalescanada/new/"
 DEBUG_MODE_ENABLE = True # To save time, use the local file
+EXPORT_CSV_ENABLE = False # Exporte dataframe posts
+weather.PATH_GECKO_DRIVER = "PLACE HERE YOUR PATH GECKO DRIVER !"
 #-----------------------------------------------------------------------------#
 ```
 
