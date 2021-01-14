@@ -51,7 +51,8 @@ This project is made to compare some weather data history and the amount of subr
 
 
 
-##Scraping reddit by using BeautifulSoup4
+
+## Scraping reddit by using BeautifulSoup4
 
 -install the following librarie
 ```bash
@@ -59,7 +60,7 @@ $ pip install BeautifulSoup4
 ```
 
 
-##Scraping weather underground by using Selenium and BeautifulSoup4
+## Scraping weather underground by using Selenium and BeautifulSoup4
 
 -install the following libraries
 ```bash
@@ -71,7 +72,8 @@ $ pip install requests
 You can find the instructions on installing it on the following [link](https://chromedriver.chromium.org/downloads). 
 Download it, install it and place it in a folder that is easily accessible to you.
 
-##Merging the result in one unique .CSV file
+
+## Merging the result in one unique .CSV file
 
 -install the following librarie
 ```bash
@@ -79,7 +81,7 @@ $ pip install pandas
 ```
 
 
-##Build plots and charts
+## Build plots and charts
 
 ```bash
 $ pip install matplotlib
