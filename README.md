@@ -62,7 +62,7 @@ $ pip install requests
 You can find the instructions on installing it on the following [link](https://chromedriver.chromium.org/downloads). 
 Download it, install it and place it in a folder that is easily accessible to you.
 
-##Merging the result in one unique .CSV file
+## Merging the result in one unique .CSV file
 
 -install the following librarie
 ```bash
