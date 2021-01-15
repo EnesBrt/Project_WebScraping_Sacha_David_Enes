@@ -84,7 +84,7 @@ $ pip install matplotlib
 $ pip install seaborn
 ```
 
-#  Corelation Graph between temperatures and number of posts in two differente forms( Toronto, 4/12/20 - 13/01/21 )
+#  Correlation Graph between temperatures and number of posts in two differente forms( Toronto, 4/12/20 - 13/01/21 )
 
 ![img](images/graphLines.png)
 ![img](images/graphBars.png)
