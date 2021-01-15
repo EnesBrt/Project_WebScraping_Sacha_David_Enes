@@ -46,7 +46,7 @@ weather.PATH_GECKO_DRIVER = "PLACE HERE YOUR PATH GECKO DRIVER !"
 ```
 
 
-## Scraping reddit by using BeautifulSoup4
+## Scraping reddit.com by using BeautifulSoup4
 
 - install the following libraries
 ```bash
@@ -54,7 +54,7 @@ $ pip install BeautifulSoup4
 ```
 
 
-## Scraping weatherunderground.com by using Selenium and BeautifulSoup4
+## Scraping wunderground.com by using Selenium and BeautifulSoup4
 
 - install the following libraries
 ```bash
