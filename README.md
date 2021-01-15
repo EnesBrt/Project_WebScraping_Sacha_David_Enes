@@ -31,7 +31,11 @@ This correctly retrieved, processed and cleaned data will then have to be linked
 
 # How to use main.py file
 
-- Go to : 
+##Go to : 
+
+- You can use the "NB_DAYS_TO_FETCH" to choose the amount of day you needed.
+- Active debug mode to dowload files and use it in locale, that's enable you to save time between different request. Take Care if you want to use news data you have to delete the previous one first. That's a server protection against an IP ban.
+
 ```python
 #------------- User settings ------------------------------------------------#
 NB_DAYS_TO_FETCH = 90 #Insert the number of day required between ()
@@ -41,6 +45,7 @@ EXPORT_CSV_ENABLE = False # Exporte dataframe posts
 weather.PATH_GECKO_DRIVER = "PLACE HERE YOUR PATH GECKO DRIVER !"
 #-----------------------------------------------------------------------------#
 ```
+
 
 ## Scraping reddit by using BeautifulSoup4
 
@@ -61,6 +66,8 @@ $ pip install requests
 - Another thing that needs to be installed for this process is ChromeDriver.
 You can find the instructions on installing it on the following [link](https://chromedriver.chromium.org/downloads). 
 - You cans also use it with Firefox, but you have to use [Gecko](https://github.com/mozilla/geckodriver/releases)
+Download it, install it and place it in a folder that is easily accessible to you.
+
 
 ## Merging the result in one unique .CSV file
 
@@ -77,7 +84,7 @@ $ pip install matplotlib
 $ pip install seaborn
 ```
 
-#  Corelation Graph between temperatures and number of posts in two differente forms( 4/12/20 - 13/01/21 )
+#  Corelation Graph between temperatures and number of posts in two differente forms( Toronto, 4/12/20 - 13/01/21 )
 
 ![img](images/graphLines.png)
 ![img](images/graphBars.png)
