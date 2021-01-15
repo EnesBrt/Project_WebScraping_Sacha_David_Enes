@@ -95,7 +95,8 @@ dfPostsSum = dfPostsSum.reset_index()
 
 # Showing temperature and comments counters
 fig, ax1 = plt.subplots()
-ax1.set_title("Correlation \n Temperature VS Comments")  # Add a title to the axes.
+
+# ax1.set_title("Correlation graph between\n Temperature and Comments")  # Add a title to the axes.
 plt.xticks(rotation=45)
 
 color1 = 'tab:red'
@@ -112,6 +113,7 @@ ax2.plot(dfPostsSum['date'], dfPostsSum['temp_avg'], label='TempAvg', color=colo
 ax2.tick_params(axis='y', labelcolor=color2)
 
 fig.tight_layout()  # otherwise the right y-label is slightly clipped
+plt.savefig(dataDir + "/correlation1")
 plt.show()
 
 
@@ -130,17 +132,17 @@ tempBars = [i / j * 100 for i, j in zip(dfPostsSum['temp_avg'], totals)]
 
 # plot
 barWidth = 0.85
-names = ('A', 'B', 'C', 'D', 'E')
 # Create comments Bars
-plt.bar(range(len(dfPostsSum)), commentBars, color='#b5ffb9', edgecolor='white', width=barWidth)
+plt.bar(range(len(dfPostsSum)), commentBars, color='#b5ffb9', edgecolor='white', width=barWidth, label='Comments')
 # Create temperature Bars
-plt.bar(range(len(dfPostsSum)), tempBars, bottom=commentBars, color='#f9bc86', edgecolor='white', width=barWidth)
+plt.bar(range(len(dfPostsSum)), tempBars, bottom=commentBars, color='#f9bc86', edgecolor='white', width=barWidth, label='Temp')
 
 # Custom x axis
 plt.xticks(range(len(dfPostsSum)), dfPostsSum['date'], rotation=45)
 plt.xlabel("date")
-
-plt.title("Correlation \n Temperature VS Comments")  # Add a title to the axes.
+plt.legend()
+# plt.title("Correlation graph between\n Temperature and Comments")  # Add a title to the axes.
+plt.savefig(dataDir + "/correlation2")
 
 # Show graphic
 plt.show()
