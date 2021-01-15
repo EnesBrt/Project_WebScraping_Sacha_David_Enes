@@ -23,7 +23,7 @@ The first step consists to track the recovery of the post tracking level on Redd
 the number of comments, the length of time on the first page, etc...
 
 Then retrieving the meteorological data for the days concerned. According to the communications team, temperatures, risk of rain,
-wind strength and other information can be retrieved from many websites, such as weather.com.
+wind strength and other information can be retrieved from many websites, such as ![wunderground.com](https://www.wunderground.com/history/daily/ca/toronto/CYTZ/date/2020-1-11)
 
 This correctly retrieved, processed and cleaned data will then have to be linked, in order to highlight the presence of a possible correlation.
 
@@ -84,7 +84,7 @@ $ pip install matplotlib
 $ pip install seaborn
 ```
 
-#  Correlation Graph between temperatures and number of posts in two differente forms( Toronto, 4/12/20 - 13/01/21 )
+#  Correlation Graph between temperatures and number of posts in two differente forms (Toronto, 4/12/20 - 13/01/21)
 
 ![img](images/graphLines.png)
 ![img](images/graphBars.png)
