@@ -23,8 +23,7 @@ The first step consists to track the recovery of the post tracking level on Redd
 the number of comments, the length of time on the first page, etc...
 
 Then retrieving the meteorological data for the days concerned. According to the communications team, temperatures, risk of rain,
-wind strength and other information can be retrieved from many websites, such as ![wunderground.com](https://www.wunderground.com/history/daily/ca/toronto/CYTZ/date/2020-1-11)
-
+wind strength and other information can be retrieved from many websites, such as [wunderground.com](https://www.wunderground.com/history/daily/ca/toronto/CYTZ/date/2020-1-11)
 This correctly retrieved, processed and cleaned data will then have to be linked, in order to highlight the presence of a possible correlation.
 
 
@@ -104,13 +103,13 @@ $ pip install seaborn
 
 [Weather Data Collection](https://towardsdatascience.com/weather-data-collection-web-scraping-using-python-a4189e7a2ee6)
 
-[Selenium documentation ](https://www.selenium.dev/documentation/en/)
+[Selenium documentation](https://www.selenium.dev/documentation/en/)
 
 [Matplotlib documentation](https://matplotlib.org/)
 
 [Seaborn documentation](https://seaborn.pydata.org/)
 
-[Pandas documentation ](https://pandas.pydata.org/docs/)
+[Pandas documentation](https://pandas.pydata.org/docs/)
 
 
 # ToDo 
