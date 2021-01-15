@@ -28,26 +28,6 @@ wind strength and other information can be retrieved from many websites, such as
 This correctly retrieved, processed and cleaned data will then have to be linked, in order to highlight the presence of a possible correlation.
 
 
-# Resources
-
-## Useful link :
-
-[BeautifulSoup documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-
-[Scrapy documentation](https://scrapy.org/)
-
-[Autoscraper tutorial](https://medium.com/better-programming/introducing-autoscraper-a-smart-fast-and-lightweight-web-scraper-for-python-20987f52c749)
-
-[Weather Data Collection](https://towardsdatascience.com/weather-data-collection-web-scraping-using-python-a4189e7a2ee6)
-
-[Selenium documentation ](https://www.selenium.dev/documentation/en/)
-
-[Matplotlib documentation](https://matplotlib.org/)
-
-[Seaborn documentation](https://seaborn.pydata.org/)
-
-[Pandas documentation ](https://pandas.pydata.org/docs/)
-
 
 # How to use main.py file
 
@@ -70,7 +50,7 @@ $ pip install BeautifulSoup4
 ```
 
 
-## Scraping weather underground by using Selenium and BeautifulSoup4
+## Scraping weatherunderground.com by using Selenium and BeautifulSoup4
 
 - install the following libraries
 ```bash
@@ -80,8 +60,7 @@ $ pip install requests
 
 - Another thing that needs to be installed for this process is ChromeDriver.
 You can find the instructions on installing it on the following [link](https://chromedriver.chromium.org/downloads). 
-Download it, install it and place it in a folder that is easily accessible to you.
-
+- You cans also use it with Firefox, but you have to use [Gecko](https://github.com/mozilla/geckodriver/releases)
 
 ## Merging the result in one unique .CSV file
 
@@ -104,6 +83,27 @@ $ pip install seaborn
 ![img](images/graphBars.png)
 
 #### Subsequently it will be possible for us to take other data such as wind, rain, atmospheric pressure... 
+
+
+# Resources
+
+## Useful link :
+
+[BeautifulSoup documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+
+[Scrapy documentation](https://scrapy.org/)
+
+[Autoscraper tutorial](https://medium.com/better-programming/introducing-autoscraper-a-smart-fast-and-lightweight-web-scraper-for-python-20987f52c749)
+
+[Weather Data Collection](https://towardsdatascience.com/weather-data-collection-web-scraping-using-python-a4189e7a2ee6)
+
+[Selenium documentation ](https://www.selenium.dev/documentation/en/)
+
+[Matplotlib documentation](https://matplotlib.org/)
+
+[Seaborn documentation](https://seaborn.pydata.org/)
+
+[Pandas documentation ](https://pandas.pydata.org/docs/)
 
 
 # ToDo 
