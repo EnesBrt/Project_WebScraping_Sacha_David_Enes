@@ -14,6 +14,7 @@ import os
 from Reddit import utils
 
 PATH_GECKO_DRIVER = ""
+COUNTRY_WEATHER = ""
 
 def _convert_units(df):
     """
@@ -199,6 +200,6 @@ def getMonthly(firstDate: datetime, lastDate: datetime, debugMode: bool = False)
         firstDate = firstDate - relativedelta(months=1)
 
     # months = ['2020-12', '2021-1'] #Example
-    page = "https://www.wunderground.com/history/monthly/ca/toronto/CYTZ/date/"
+    page = "https://www.wunderground.com/history/monthly/ca/" + COUNTRY_WEATHER + "/CYTZ/date/"
     df_output = _scraper(page, months, debugMode)
     return df_output

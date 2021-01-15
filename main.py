@@ -9,7 +9,8 @@ import os
 
 
 #------------- User settings ---------------------
-NB_DAYS_TO_FETCH = 90
+NB_DAYS_TO_FETCH = 90 # Insert the number of day required between ()
+weather.COUNTRY_WEATHER = "toronto"  # Choise country weather
 REDDIT_TARGET_URL = "https://new.reddit.com/r/bapcsalescanada/new/"
 DEBUG_MODE_ENABLE = True # To save time, use the local file
 EXPORT_CSV_ENABLE = True # Exporte dataframe posts

@@ -37,7 +37,8 @@ This correctly retrieved, processed and cleaned data will then have to be linked
 
 ```python
 #------------- User settings ------------------------------------------------#
-NB_DAYS_TO_FETCH = 90 #Insert the number of day required between ()
+NB_DAYS_TO_FETCH = 90 # Insert the number of day required between ()
+weather.COUNTRY_WEATHER = "toronto" # Choise country weather
 REDDIT_TARGET_URL = "https://new.reddit.com/r/bapcsalescanada/new/"
 DEBUG_MODE_ENABLE = True # To save time, use the local file
 EXPORT_CSV_ENABLE = False # Exporte dataframe posts
