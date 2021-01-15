@@ -17,7 +17,7 @@ Our manager therefore asked you to carry out a study on the impact of weather on
 It is important to be able to repeat this analysis throughout the year.
 
 
-## Method:
+## Method :
 
 The first step consists to track the recovery of the post tracking level on Reddit. For example, we can focus on the number of votes,
 the number of comments, the length of time on the first page, etc...
