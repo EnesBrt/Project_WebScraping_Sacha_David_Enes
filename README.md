@@ -31,7 +31,7 @@ This correctly retrieved, processed and cleaned data will then have to be linked
 
 # How to use main.py file
 
-##Go to : 
+## Go to : 
 
 - You can use the "NB_DAYS_TO_FETCH" to choose the amount of day you needed.
 - Active debug mode to dowload files and use it in locale, that's enable you to save time between different request. Take Care if you want to use news data you have to delete the previous one first. That's a server protection against an IP ban.
