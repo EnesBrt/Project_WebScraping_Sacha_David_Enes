@@ -7,9 +7,7 @@
 # Context 
 
 We are data scientists team, in a selling computer components company (B2C). 
-However, communications managers have raised their questions about the publication date of certain content, 
-which seems to have an impact on the number of views and comments posted. One would almost suspect that computer hardware enthusiasts 
-go outside on a sunny day.
+Communications managers have raised their questions about the publication date of certain content,which seems to have an impact on the number of views and comments posted. One would almost suspect that computer hardware enthusiasts go outside on a sunny day.
 
 Our manager therefore asked you to carry out a study on the impact of weather on the number of returns on company publications.
 It is important to be able to repeat this analysis throughout the year.
