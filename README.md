@@ -6,9 +6,7 @@
 
 # Context 
 
-## We are data scientists team, in a selling computer components company (B2C). 
-
-
+We are data scientists team, in a selling computer components company (B2C). 
 However, communications managers have raised their questions about the publication date of certain content, 
 which seems to have an impact on the number of views and comments posted. One would almost suspect that computer hardware enthusiasts 
 go outside on a sunny day.
